@@ -36,7 +36,7 @@ export default () => (
       <meta
         name="twitter:image"
         property="og:image"
-        content="http://nikolalsvk.github.io/site_preview.png"
+        content="https://nikolalsvk.github.io/site_preview.png"
       />
       <meta name="twitter:title" property="og:title" content="Nikola Đuza" />
       <meta
@@ -63,26 +63,29 @@ export default () => (
       </a>
     </h2>
     <ul>
+      <li></li>
+      <li></li>
+      <li></li>
       <li>
-        Software Engineer at{" "}
+        <a href="mailto:nikolaseap@gmail.com" role="button">
+          <span role="img" aria-label="wave">
+            👋
+          </span>
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <span>Software Engineer at </span>
         <a href="https://www.toptal.com/resume/nikola-duza#utilize-just-top-notch-software-coders">
           Toptal
         </a>
       </li>
+    </ul>
+    <ul>
       <li>
-        <a href="https://github.com/nikolalsvk">
-          <span role="image" aria-label="Computer">
-            💻
-          </span>
-        </a>
-      </li>
-      <li>
-        <a href="https://medium.com/@nikolalsvk">📖</a>
-      </li>
-      <li>
-        <a href="mailto:nikolaseap@gmail.com" role="button">
-          👋
-        </a>
+        <span>Organizer at </span>
+        <a href="https://novisadjs.org">Novi Sad JS</a>
       </li>
     </ul>
   </div>
