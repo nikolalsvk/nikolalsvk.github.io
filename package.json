@@ -1,0 +1,27 @@
+{
+  "name": "nikolalsvk.github.io",
+  "version": "1.0.0",
+  "description": "Nikola's personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikolalsvk/nikolalsvk.github.io.git"
+  },
+  "keywords": [
+    "personal-website"
+  ],
+  "author": "Nikola Đuza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nikolalsvk/nikolalsvk.github.io/issues"
+  },
+  "homepage": "https://github.com/nikolalsvk/nikolalsvk.github.io#readme",
+  "dependencies": {
+    "gatsby": "^2.18.25",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
