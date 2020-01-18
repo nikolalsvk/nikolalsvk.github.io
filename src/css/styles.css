@@ -16,7 +16,6 @@ body {
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  justify-content: center;
   position: fixed;
   top: 0;
   right: 0;
@@ -145,58 +144,6 @@ ul li {
   display: flex;
   align-items: center;
 }
-ul li:nth-child(1) {
-  animation: fade 1.5s ease-out 0.1s;
-  letter-spacing: 0.125vw;
-}
-ul li:nth-child(1):after {
-  content: "";
-  margin-left: 1vw;
-  width: 0.5vw;
-  height: 0.5vw;
-  border-radius: 50%;
-  background-color: #ff9b71;
-}
-ul li:nth-child(1) a {
-  margin-left: 0.5vw;
-}
-ul li:nth-child(1) a:hover,
-ul li:nth-child(1) a:focus {
-  color: #ff4444;
-}
-ul li:nth-child(2) {
-  animation: fade 1.5s ease-out 0.2s;
-}
-ul li:nth-child(3) {
-  animation: fade 1.5s ease-out 0.3s;
-}
-ul li:nth-child(4) {
-  animation: fade 1.5s ease-out 0.4s;
-}
-ul li:nth-child(5) {
-  animation: fade 1.5s ease-out 0.5s;
-}
-ul li:nth-child(6) {
-  animation: fade 1.5s ease-out 0.6s;
-}
-ul li:nth-child(7) a {
-  animation: hi 3s linear -0.5s 1;
-}
-ul li a {
-  color: #fef29e;
-}
-ul li:not(:first-child) {
-  margin-left: 1vw;
-}
-ul li:not(:first-child) a {
-  transform: rotate(9deg);
-  transition: transform 0.125s cubic-bezier(0.5, 0, 0.25, 2);
-  font-style: normal;
-}
-ul li:not(:first-child) a:hover,
-ul li:not(:first-child) a:focus {
-  transform: scale(1.25) rotate(9deg);
-}
 
 @keyframes intro {
   0%,
@@ -215,18 +162,6 @@ ul li:not(:first-child) a:focus {
   }
   100% {
     opacity: 1;
-  }
-}
-
-@keyframes reveal {
-  0%,
-  50% {
-    opacity: 0;
-    width: 0;
-  }
-  100% {
-    opacity: 1;
-    width: 100%;
   }
 }
 
@@ -268,36 +203,5 @@ ul li:not(:first-child) a:focus {
   }
   100% {
     transform: rotate(9deg) translate(0, 0);
-  }
-}
-
-@media all and (max-width: 640px) {
-  h1 {
-    font-size: 6vw;
-    line-height: 7.5vw;
-    padding-left: 5vw;
-  }
-
-  ul {
-    font-size: 4vw;
-    line-height: 6.5vw;
-    padding-right: 3.5vw;
-  }
-  ul li:first-child {
-    width: 100%;
-    justify-content: flex-end;
-    transform: translateX(0.5vw);
-  }
-  ul li:first-child:after {
-    display: none;
-  }
-  ul li:first-child a {
-    margin-left: 1vw;
-  }
-  ul li:not(:first-child) {
-    transform: translateX(-1vw);
-  }
-  ul li:not(:first-child) a {
-    margin-left: 2vw;
   }
 }
