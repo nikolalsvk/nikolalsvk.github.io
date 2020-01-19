@@ -43,22 +43,23 @@ div {
   text-align: center;
   display: flex;
   flex-direction: column;
-  padding-bottom: 1.5vw;
   position: relative;
   z-index: 10;
 }
 
 h1 {
   font-size: 4vw;
+  font-style: normal;
   line-height: 5vw;
   color: #ff9b71;
   font-weight: 700;
-  font-style: italic;
   font-family: "Open Sans", sans-serif;
   padding-left: 1.35vw;
   letter-spacing: 0.25vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   animation: fade 2s ease-out -0.65s;
-  transform: rotate(-9deg);
 }
 h1 span {
   white-space: nowrap;
@@ -68,16 +69,14 @@ h1 span {
 }
 
 h2 {
-  font-size: 12vw;
-  line-height: 12vw;
+  font-size: 12.5vw;
+  line-height: 12.5vw;
   font-weight: 800;
-  font-style: italic;
   font-family: "Open Sans", sans-serif;
   text-align: center;
-  transform: rotate(-9deg);
 }
 h2 a {
-  height: 12vw;
+  height: 12.5vw;
   display: block;
   position: relative;
 }
@@ -118,27 +117,28 @@ h2 a span:nth-child(3) {
 h2 a span:nth-child(3) em {
   margin-top: -9.25vw;
 }
-h2 a:hover span {
+h2 a:hover span,
+h2 a:focus span {
   transition: transform 0.125s cubic-bezier(0.5, 0, 0.25, 2.5);
 }
-h2 a:hover span:nth-child(1) {
+h2 a:hover span:nth-child(1),
+h2 a:focus span:nth-child(1) {
   transform: translateX(1vw);
 }
-h2 a:hover span:nth-child(3) {
+h2 a:hover span:nth-child(3),
+h2 a:focus span:nth-child(3) {
   transform: translateX(-1vw);
 }
 
 ul {
-  font-size: 2vw;
+  font-size: 2.7vw;
   line-height: 4vw;
   color: #ff9b71;
   font-weight: 700;
-  font-style: italic;
   font-family: "Open Sans", sans-serif;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  transform: rotate(-9deg);
   animation: fade 1.5s ease-out 0s;
 }
 ul li {
@@ -150,7 +150,6 @@ ul li:nth-child(1) {
   letter-spacing: 0.125vw;
 }
 ul li:nth-child(1):after {
-  content: "";
   margin-left: 1vw;
   width: 0.5vw;
   height: 0.5vw;
@@ -167,19 +166,10 @@ ul li:nth-child(1) a:focus {
 ul li:nth-child(2) {
   animation: fade 1.5s ease-out 0.2s;
 }
-ul li:nth-child(3) {
+ul li:nth-child(3) a {
   animation: fade 1.5s ease-out 0.3s;
 }
-ul li:nth-child(4) {
-  animation: fade 1.5s ease-out 0.4s;
-}
-ul li:nth-child(5) {
-  animation: fade 1.5s ease-out 0.5s;
-}
-ul li:nth-child(6) {
-  animation: fade 1.5s ease-out 0.6s;
-}
-ul li:nth-child(7) a {
+ul li:nth-child(4) a {
   animation: hi 3s linear -0.5s 1;
 }
 ul li a {
@@ -189,9 +179,11 @@ ul li:not(:first-child) {
   margin-left: 1vw;
 }
 ul li:not(:first-child) a {
-  transform: rotate(9deg);
   transition: transform 0.125s cubic-bezier(0.5, 0, 0.25, 2);
   font-style: normal;
+}
+ul li a {
+  color: #fef29e;
 }
 ul li:not(:first-child) a:hover,
 ul li:not(:first-child) a:focus {
@@ -215,18 +207,6 @@ ul li:not(:first-child) a:focus {
   }
   100% {
     opacity: 1;
-  }
-}
-
-@keyframes reveal {
-  0%,
-  50% {
-    opacity: 0;
-    width: 0;
-  }
-  100% {
-    opacity: 1;
-    width: 100%;
   }
 }
 
@@ -255,19 +235,19 @@ ul li:not(:first-child) a:focus {
 @keyframes hi {
   0%,
   80% {
-    transform: rotate(9deg) translate(0, 0);
+    transform: rotate(0deg) translate(0, 0);
   }
   85% {
-    transform: rotate(24deg) translate(0.33333vw, -0.25vw);
+    transform: rotate(15deg) translate(0.33333vw, -0.25vw);
   }
   90% {
-    transform: rotate(9deg) translate(0, 0);
+    transform: rotate(0deg) translate(0, 0);
   }
   95% {
-    transform: rotate(24deg) translate(0.33333vw, -0.25vw);
+    transform: rotate(15deg) translate(0.33333vw, -0.25vw);
   }
   100% {
-    transform: rotate(9deg) translate(0, 0);
+    transform: rotate(0deg) translate(0, 0);
   }
 }
 
@@ -275,13 +255,11 @@ ul li:not(:first-child) a:focus {
   h1 {
     font-size: 6vw;
     line-height: 7.5vw;
-    padding-left: 5vw;
   }
 
   ul {
     font-size: 4vw;
     line-height: 6.5vw;
-    padding-right: 3.5vw;
   }
   ul li:first-child {
     width: 100%;
