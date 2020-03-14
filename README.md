@@ -1,9 +1,9 @@
 ![Preview](site_preview.png)
 
-# nikolalsvk.github.io
+# :airplane: Personal landing page :rocket:
 
-Personal website
+:star: it if you like it :heart:
 
-Check it out at [http://nikolalsvk.github.io](http://nikolalsvk.github.io)
+Check it out at [https://nikolalsvk.github.io](https://nikolalsvk.github.io)
 
-Inspired by Tim Van Damme's website.
+Inspired largely by Tim Van Damme's website.
