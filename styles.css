@@ -227,7 +227,7 @@ ul li a {
 }
 
 @media (prefers-color-scheme: light) {
-  .body {
+  body {
     --color-main: #9b5de5;
     --color-primary: #f15bb5;
     --color-secondary: #00bbf9;
@@ -238,7 +238,7 @@ ul li a {
 }
 
 @media (prefers-reduced-motion) {
-  .body {
+  body {
     animation: none;
   }
 
